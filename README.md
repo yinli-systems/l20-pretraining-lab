@@ -6,7 +6,7 @@
 [![Code: MIT](https://img.shields.io/badge/Code-MIT-blue.svg)](LICENSE)
 [![Language weights](https://img.shields.io/badge/Hugging_Face-L20--1B--20B--Base-yellow.svg)](https://huggingface.co/AliceYin/L20-1B-20B-Base)
 
-[Language results](results/language-model/README.md) · [Model card](pretraining/MODEL_CARD.md) · [Multimodal results](results/2026-09-28/README.md) · [Reproduce](docs/reproducibility.md)
+[Language results](results/language-model/README.md) · [Math/code post-training](results/2026-10-20-math-code/README.md) · [Model card](pretraining/MODEL_CARD.md) · [Multimodal results](results/2026-09-28/README.md) · [Reproduce](docs/reproducibility.md)
 
 A released English base language model, trained with a new tokenizer and random
 model initialization. This repository pairs the training implementation with a
@@ -76,6 +76,18 @@ release hashes are in the [model card](pretraining/MODEL_CARD.md) and
 The base LM is not an instruction- or safety-tuned chatbot. The combined VLM
 is not fully pretrained from scratch.
 
+## English math and code post-training · October 20, 2026
+
+A follow-on full-parameter run on one RTX PRO 6000 Blackwell selected an SFT
+checkpoint before its final held-out evaluation. On 1,791 questions, GSM8K rose
+**0.82% → 20.44%**, MATH500 **1.38% → 17.43%**, and HumanEval execution passes
+**0% → 8.33%**. Absolute scores remain low. Two rejection-sampling fine-tuning
+candidates failed to beat the selected SFT checkpoint; they are retained in the
+report. These are project-specific held-out portions and interface-adapted
+generation results, separate from the pretraining table and its protocol.
+
+[Final scores, uncertainty and paired verdicts](results/2026-10-20-math-code/README.md) · [Source and audit history](posttraining/2026-10-20-video-model/README.md)
+
 ## Multimodal expansion · September 28, 2026
 
 After **5,120 updates / 163,840 new-image events**, the fixed endpoint was
@@ -115,6 +127,7 @@ These commands verify stored evidence and presentation—not fresh model inferen
 
 ```text
 pretraining/       Language training, evaluation, original reports and tests
+posttraining/      Bounded English math/code follow-on run and CPU verification
 L20-VL-1.2B/       Multimodal implementation and historical experiments
 results/           Language comparisons and dated multimodal result packages
 assets/            Reproducible README figure and its source manifest

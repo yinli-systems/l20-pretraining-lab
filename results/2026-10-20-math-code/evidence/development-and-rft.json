@@ -1,0 +1,146 @@
+{
+  "split": "dev",
+  "n": {
+    "gsm8k": 96,
+    "math500": 64,
+    "humaneval": 32
+  },
+  "models": {
+    "base-dev": {
+      "metrics": {
+        "gsm8k": {
+          "correct": 1,
+          "n": 96,
+          "accuracy": 0.010416666666666666
+        },
+        "math500": {
+          "correct": 2,
+          "n": 64,
+          "accuracy": 0.03125
+        },
+        "humaneval": {
+          "correct": 0,
+          "n": 32,
+          "accuracy": 0.0
+        }
+      },
+      "macro_accuracy": 0.013888888888888888,
+      "base_prompting": true
+    },
+    "sft-12000": {
+      "metrics": {
+        "gsm8k": {
+          "correct": 23,
+          "n": 96,
+          "accuracy": 0.23958333333333334
+        },
+        "math500": {
+          "correct": 19,
+          "n": 64,
+          "accuracy": 0.296875
+        },
+        "humaneval": {
+          "correct": 2,
+          "n": 32,
+          "accuracy": 0.0625
+        }
+      },
+      "macro_accuracy": 0.1996527777777778,
+      "base_prompting": false
+    },
+    "rft-1-23": {
+      "metrics": {
+        "gsm8k": {
+          "correct": 21,
+          "n": 96,
+          "accuracy": 0.21875
+        },
+        "math500": {
+          "correct": 13,
+          "n": 64,
+          "accuracy": 0.203125
+        },
+        "humaneval": {
+          "correct": 2,
+          "n": 32,
+          "accuracy": 0.0625
+        }
+      },
+      "macro_accuracy": 0.16145833333333334,
+      "base_prompting": false
+    },
+    "rft-2-23": {
+      "metrics": {
+        "gsm8k": {
+          "correct": 17,
+          "n": 96,
+          "accuracy": 0.17708333333333334
+        },
+        "math500": {
+          "correct": 14,
+          "n": 64,
+          "accuracy": 0.21875
+        },
+        "humaneval": {
+          "correct": 3,
+          "n": 32,
+          "accuracy": 0.09375
+        }
+      },
+      "macro_accuracy": 0.16319444444444445,
+      "base_prompting": false
+    }
+  },
+  "selected_checkpoint": {
+    "stage": "sft",
+    "step": 12000
+  },
+  "rft2_quality_filter": {
+    "revision": "rft-quality-v2",
+    "raw_accepted": 958,
+    "clean_accepted": 937,
+    "source_counts_before": {
+      "code": 497,
+      "math": 461
+    },
+    "source_counts_after": {
+      "code": 497,
+      "math": 440
+    },
+    "rejection_counts": {
+      "continuation_after_final_answer": 9,
+      "near_generation_cap": 9,
+      "no_complete_explicit_final_answer": 2,
+      "confirmed_bad_training_question": 1
+    },
+    "limitation": "Structural/answer checks do not certify all reasoning steps or all question labels.",
+    "manifest": {
+      "train": {
+        "generated_prompts": 890,
+        "blocks": 518
+      },
+      "valid": {
+        "generated_prompts": 47,
+        "blocks": 28
+      }
+    }
+  },
+  "original_local_report_hashes": {
+    "first-eval-comparison-corrected": {
+      "original_sha256": "f9dae8c7af03710c132eb53e4f961bb6fdf4651f3d364a477e3e646277267d65"
+    },
+    "second-eval-comparison": {
+      "original_sha256": "66f9b2c54664a6955b70b693d8bd4b232e2b4f93d11903fbc99a7971a8f3c463"
+    },
+    "sft-12000-comparison": {
+      "original_sha256": "67c3d7e18a5ad2124c795b287cfee6e947473e2a3e5fe6097c34bd8fd6da7710"
+    },
+    "rft-1-comparison": {
+      "original_sha256": "6aa339f83f22cde00151310495ea37727084346e8ed820f5f491f215e1f68d44"
+    },
+    "rft-2-comparison": {
+      "original_sha256": "ec33cb34294551ca2f014f0f672bb14cf6e29f47f525022bdb67a2d9baf95f20"
+    }
+  },
+  "warning": "Development results used for selection. Two RFT candidates failed to exceed SFT12000; do not combine their best per-task scores into a synthetic model."
+}

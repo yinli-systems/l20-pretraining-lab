@@ -29,5 +29,7 @@ jobs:
         run: python tools/verify_repository.py
       - name: Verify language-model comparison and README
         run: python tools/build_language_showcase.py --check
+      - name: Verify math and code post-training verdicts
+        run: python posttraining/2026-10-20-video-model/verify_results.py
       - name: Run tests
         run: python -m pytest -q

@@ -1,0 +1,3 @@
+# Preserve the byte-exact executed snapshot, including existing EOF blank lines.
+scripts/common.py whitespace=-blank-at-eof
+scripts/l20-data.conf whitespace=-blank-at-eof

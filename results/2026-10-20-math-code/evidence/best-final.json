@@ -1,0 +1,41 @@
+{
+  "model": "selected SFT step 12000 (local checkpoint; weights not published)",
+  "base_prompting": false,
+  "split": "final",
+  "metrics": {
+    "gsm8k": {
+      "correct": 250,
+      "n": 1223,
+      "accuracy": 0.2044153720359771
+    },
+    "humaneval": {
+      "correct": 11,
+      "n": 132,
+      "accuracy": 0.08333333333333333
+    },
+    "math500": {
+      "correct": 76,
+      "n": 436,
+      "accuracy": 0.1743119266055046
+    }
+  },
+  "macro_accuracy": 0.15402021065827168,
+  "seconds": 1929.6972285956144,
+  "seed": 20261019,
+  "max_new_tokens": 1800,
+  "effective_max_new_tokens": "min(1800, 2048 - padded_prompt_length)",
+  "context": 2048,
+  "prompt_token_cap": 1100,
+  "prompt_truncation": "left",
+  "generation": "greedy",
+  "eos_token_ids": [
+    32001,
+    0
+  ],
+  "code_execution": "empty chroot, unprivileged UID, seccomp syscall allowlist, 3s CPU / 6s wall / 768MiB address space",
+  "math_grader": "math-verify",
+  "cache_strategy": "dynamic",
+  "evaluation_protocol": "v2-hashlib-entrypoint",
+  "code_extraction": "first complete code fence defining the requested entrypoint; supplied prompt context retained; no test-guided selection",
+  "sandbox_revision": "v2: hashlib and md5 preloaded before chroot; original syscall and resource limits retained"
+}

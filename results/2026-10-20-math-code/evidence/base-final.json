@@ -1,0 +1,41 @@
+{
+  "model": "base",
+  "base_prompting": true,
+  "split": "final",
+  "metrics": {
+    "gsm8k": {
+      "correct": 10,
+      "n": 1223,
+      "accuracy": 0.008176614881439084
+    },
+    "humaneval": {
+      "correct": 0,
+      "n": 132,
+      "accuracy": 0.0
+    },
+    "math500": {
+      "correct": 6,
+      "n": 436,
+      "accuracy": 0.013761467889908258
+    }
+  },
+  "macro_accuracy": 0.007312694257115781,
+  "seconds": 1923.594186898321,
+  "seed": 20261019,
+  "max_new_tokens": 1800,
+  "effective_max_new_tokens": "min(1800, 2048 - padded_prompt_length)",
+  "context": 2048,
+  "prompt_token_cap": 1100,
+  "prompt_truncation": "left",
+  "generation": "greedy",
+  "eos_token_ids": [
+    32001,
+    0
+  ],
+  "code_execution": "empty chroot, unprivileged UID, seccomp syscall allowlist, 3s CPU / 6s wall / 768MiB address space",
+  "math_grader": "math-verify",
+  "cache_strategy": "dynamic",
+  "evaluation_protocol": "v2-hashlib-entrypoint",
+  "code_extraction": "first complete code fence defining the requested entrypoint; supplied prompt context retained; no test-guided selection",
+  "sandbox_revision": "v2: hashlib and md5 preloaded before chroot; original syscall and resource limits retained"
+}

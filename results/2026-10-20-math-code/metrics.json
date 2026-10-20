@@ -1,0 +1,146 @@
+{
+  "status": "verified_complete",
+  "pipeline_finished_utc": "2026-10-20T13:02:28.924739+00:00",
+  "selected_checkpoint": {
+    "stage": "sft",
+    "step": 12000,
+    "validation_loss": 0.5279238795134852,
+    "dev_macro_accuracy": 0.1996527777777778,
+    "evaluation": "/workspace/posttrain-l20/evaluations/sft-12000.json",
+    "evaluation_protocol": "v2-hashlib-entrypoint"
+  },
+  "metrics": {
+    "base-final": {
+      "gsm8k": {
+        "correct": 10,
+        "n": 1223,
+        "accuracy": 0.008176614881439084,
+        "wilson_95_ci": [
+          0.004447383914079003,
+          0.014985818843522465
+        ]
+      },
+      "math500": {
+        "correct": 6,
+        "n": 436,
+        "accuracy": 0.013761467889908258,
+        "wilson_95_ci": [
+          0.006321858865235655,
+          0.02969443405805619
+        ]
+      },
+      "humaneval": {
+        "correct": 0,
+        "n": 132,
+        "accuracy": 0.0,
+        "wilson_95_ci": [
+          0,
+          0.02827898679860847
+        ]
+      }
+    },
+    "best-final": {
+      "gsm8k": {
+        "correct": 250,
+        "n": 1223,
+        "accuracy": 0.2044153720359771,
+        "wilson_95_ci": [
+          0.18275596691944038,
+          0.22792583324161184
+        ]
+      },
+      "math500": {
+        "correct": 76,
+        "n": 436,
+        "accuracy": 0.1743119266055046,
+        "wilson_95_ci": [
+          0.14158796219779002,
+          0.21272483777913187
+        ]
+      },
+      "humaneval": {
+        "correct": 11,
+        "n": 132,
+        "accuracy": 0.08333333333333333,
+        "wilson_95_ci": [
+          0.04716796636561071,
+          0.14306452263322966
+        ]
+      }
+    }
+  },
+  "deltas": {
+    "gsm8k": {
+      "delta_percentage_points": 19.6238757154538,
+      "gained_items": 249,
+      "lost_items": 9,
+      "paired_bootstrap_95_ci_pp": [
+        17.334423548650857,
+        21.913327882256745
+      ]
+    },
+    "math500": {
+      "delta_percentage_points": 16.055045871559635,
+      "gained_items": 74,
+      "lost_items": 4,
+      "paired_bootstrap_95_ci_pp": [
+        12.385321100917432,
+        19.724770642201836
+      ]
+    },
+    "humaneval": {
+      "delta_percentage_points": 8.333333333333332,
+      "gained_items": 11,
+      "lost_items": 0,
+      "paired_bootstrap_95_ci_pp": [
+        3.787878787878788,
+        13.636363636363637
+      ]
+    }
+  },
+  "macro_accuracy": {
+    "base-final": 0.007312694257115781,
+    "best-final": 0.15402021065827168
+  },
+  "protocol": {
+    "split": "final",
+    "seed": 20261019,
+    "context": 2048,
+    "max_new_tokens": 1800,
+    "effective_max_new_tokens": "min(1800, 2048 - padded_prompt_length)",
+    "prompt_token_cap": 1100,
+    "prompt_truncation": "left",
+    "generation": "greedy",
+    "eos_token_ids": [
+      32001,
+      0
+    ],
+    "evaluation_protocol": "v2-hashlib-entrypoint",
+    "math_grader": "math-verify",
+    "code_execution": "empty chroot, unprivileged UID, seccomp syscall allowlist, 3s CPU / 6s wall / 768MiB address space"
+  },
+  "prompt_adaptation": "Base continuation; posttrained ChatML. Benchmark content identical; rendered prompts differ.",
+  "verification": {
+    "1791_rows_each": true,
+    "same_unique_task_ids_and_benchmark_content": true,
+    "disjoint_from_development_ids_and_prompts": true,
+    "counts_recomputed_from_all_verdicts": true,
+    "all_input_hashes_match_remote": true,
+    "new_generation": false,
+    "new_grading": false,
+    "failures_or_inconsistencies": []
+  },
+  "uncertainty": "Per-score Wilson 95% intervals; paired bootstrap percentile 95% intervals with 10000 resamples, seeds 20261019..20261021. They describe finite benchmark uncertainty, not training-run variation or a causal decomposition.",
+  "limitations": [
+    "Single trained checkpoint and one frozen held-out split; no checkpoint revisions after observing final results.",
+    "Native 2048-token context and greedy decoding; not directly comparable to leaderboards with other protocols.",
+    "Math answer grading does not certify reasoning steps; code pass rate covers supplied HumanEval tests only.",
+    "Original grading verdicts were aggregated, not independently regraded in this comparison."
+  ],
+  "publication": {
+    "source": "Local completed-run receipts; only paths and private deployment metadata omitted. No inference or scoring rerun.",
+    "raw_inputs_published": false,
+    "paired_verdicts": "paired-verdicts.csv",
+    "original_comparison_sha256": "b2998547ff59f30a131c4260d69c260b208e59f2bdbb87d5d27b12cc4d54b0d4"
+  }
+}

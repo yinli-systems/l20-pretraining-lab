@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "description": "Hash-bound publication derived from locally verified final receipts. Raw outputs and model weights are not included.",
+  "files": {
+    "posttraining/2026-10-20-video-model/.gitattributes": {
+      "sha256": "17692589fa27acfbfbce5ab335caa970bf24403903043367cb8269b770fdc2e3",
+      "bytes": 171
+    },
+    "posttraining/2026-10-20-video-model/.gitignore": {
+      "sha256": "92e7a595a7fac750c76ef0bb5933b333484f6056b6108631b3c58af48face329",
+      "bytes": 75
+    },
+    "posttraining/2026-10-20-video-model/README.md": {
+      "sha256": "9e016a6466a01f59d8fd61990feb27cb0bf723e7b2beaa571699be2615a03cd3",
+      "bytes": 5067
+    },
+    "posttraining/2026-10-20-video-model/environment.freeze.txt": {
+      "sha256": "19d77540daa1b61bf116822cd3fb64df31a243412ca6172c59202c5ae5cc63c1",
+      "bytes": 2069
+    },
+    "posttraining/2026-10-20-video-model/scripts/advanced.sh": {
+      "sha256": "16946191c9f9f42d9849b95ceca97ec72393198f458e7ffcc87fa9167fd85f5d",
+      "bytes": 101
+    },
+    "posttraining/2026-10-20-video-model/scripts/audit_data.py": {
+      "sha256": "6f6f9356a8e77ac218f0dc5d23046d047cb2ab8f471ac642908452817557b0f8",
+      "bytes": 2533
+    },
+    "posttraining/2026-10-20-video-model/scripts/audit_first_eval.py": {
+      "sha256": "2e61109467338d517a1046b0143f8e629fe202c947773541b5e6dc1bf9068518",
+      "bytes": 9935
+    },
+    "posttraining/2026-10-20-video-model/scripts/audit_native_loss.py": {
+      "sha256": "360915487230ed88ce350f74acd37957940bf3f81c712e1a42f78e0ea3db309f",
+      "bytes": 3047
+    },
+    "posttraining/2026-10-20-video-model/scripts/audit_rft_regression.py": {
+      "sha256": "3a59112031a1b5c9b064a8182152536cdde17de94f1ab4ed5262faefe7e3d96a",
+      "bytes": 11068
+    },
+    "posttraining/2026-10-20-video-model/scripts/backup_manifest.py": {
+      "sha256": "4d15dff4a8f40ca9bb9d379b30937b5b85cadec32d77883fb6b890084fec162b",
+      "bytes": 1326
+    },
+    "posttraining/2026-10-20-video-model/scripts/benchmark.py": {
+      "sha256": "036997f0413c7648d85b2e3feb3f90e88f91a8630f2ef6d33a90307999f23ba9",
+      "bytes": 3984
+    },
+    "posttraining/2026-10-20-video-model/scripts/benchmark.sh": {
+      "sha256": "2a0eee4d4151981a1e3d464a25056b0ffaa8a64b8d36ac000779ca914b4b9b0d",
+      "bytes": 89
+    },
+    "posttraining/2026-10-20-video-model/scripts/bootstrap.py": {
+      "sha256": "6a4b8de9a869feea426882528625e867f5a587185dfd4444667d4225f3e71fa9",
+      "bytes": 1568
+    },
+    "posttraining/2026-10-20-video-model/scripts/common.py": {
+      "sha256": "7dbadd61ed18ec8fc7dfa10603d193f7bc445cbd428d9ada82abdb9d2713727a",
+      "bytes": 3879
+    },
+    "posttraining/2026-10-20-video-model/scripts/compare_final_evaluation.py": {
+      "sha256": "c8816968ee6f93ba94cf541f3909935fc63e10b0b9494f4b5fc4be70961f40dc",
+      "bytes": 10310
+    },
+    "posttraining/2026-10-20-video-model/scripts/env.sh": {
+      "sha256": "3f0d5c7086f6f99a05610143aba1a16fafd35d3f4d495616017f4a4ad1ce8ecc",
+      "bytes": 602
+    },
+    "posttraining/2026-10-20-video-model/scripts/evaluate.py": {
+      "sha256": "86966fbef5c655f0cc409a394e999ac7e942e2961008b7079e3ebb3f5e9f547b",
+      "bytes": 8149
+    },
+    "posttraining/2026-10-20-video-model/scripts/inference_benchmark.py": {
+      "sha256": "8b60faa789bf4d003180a638f3df40a4cc48fc822169411b346a9220fe610496",
+      "bytes": 2837
+    },
+    "posttraining/2026-10-20-video-model/scripts/l20-advanced.conf": {
+      "sha256": "0068deed03f8d38124ade77a7e7dee70aece2fe4eebd779bb55ff68d1f18ede8",
+      "bytes": 330
+    },
+    "posttraining/2026-10-20-video-model/scripts/l20-benchmark.conf": {
+      "sha256": "e2a9af89b588e6fbef4087f96a3fc4c119334fa4d13a15524a1c044fa5f211de",
+      "bytes": 333
+    },
+    "posttraining/2026-10-20-video-model/scripts/l20-data.conf": {
+      "sha256": "d8ed23c843341598ab53a21f0857742d2a533923e0c4b2ecc211d9dff4fa85af",
+      "bytes": 333
+    },
+    "posttraining/2026-10-20-video-model/scripts/l20-telemetry.conf": {
+      "sha256": "c718b0c36841cb9264e0437e9e65e3fb67a39dcf59aaa05ab43a3a9dbc9cc2c4",
+      "bytes": 307
+    },
+    "posttraining/2026-10-20-video-model/scripts/l20-train.conf": {
+      "sha256": "b2da9dd3e370aba66aa7fe2aff5aa1608a5e4f4ecfcabd38056b8f82e18c4165",
+      "bytes": 344
+    },
+    "posttraining/2026-10-20-video-model/scripts/pipeline.py": {
+      "sha256": "fef8e28f7e4b2c0b3cb0db81b078713c9232d3a3229529a45c3f46a6969f791f",
+      "bytes": 8967
+    },
+    "posttraining/2026-10-20-video-model/scripts/pipeline.sh": {
+      "sha256": "ef70f51756daecfe344f68349d07c157b54cebde07fd3445a3d4d69d2028f86b",
+      "bytes": 93
+    },
+    "posttraining/2026-10-20-video-model/scripts/preflight.py": {
+      "sha256": "5838ad303190a6fb547d09ed204f07707e63896efb5fadfe4a6cc4f40e4c073f",
+      "bytes": 2298
+    },
+    "posttraining/2026-10-20-video-model/scripts/prepare.py": {
+      "sha256": "901ce7540da73ef4933d672208e4c122ac2e261ea84622906c54e4b0268c89ce",
+      "bytes": 9992
+    },
+    "posttraining/2026-10-20-video-model/scripts/prepare.sh": {
+      "sha256": "1e43937f455071f04f1311dd23421ac1fc1783e78d2b3ef6dafdf7d2fd6d5799",
+      "bytes": 396
+    },
+    "posttraining/2026-10-20-video-model/scripts/prepare_advanced.py": {
+      "sha256": "3586e9fa26d7579e25b9851def5f8facc580929ee87cf9175f15b57093f9c1f1",
+      "bytes": 8201
+    },
+    "posttraining/2026-10-20-video-model/scripts/refine_benchmark.py": {
+      "sha256": "19bd66edc7733ddd6b419e761b1b7a97a6e16e9784834c59e87bd2cfd83a68ea",
+      "bytes": 2751
+    },
+    "posttraining/2026-10-20-video-model/scripts/regrade_existing_dev.py": {
+      "sha256": "999c8b76d3685cd398b36c05b6a05811275d164953c9bc1497a5addc13377b8a",
+      "bytes": 4311
+    },
+    "posttraining/2026-10-20-video-model/scripts/rft.py": {
+      "sha256": "750fd239661c7d7ff43d4138e990eadf9e6f13c54058c82a335d939dcae207e6",
+      "bytes": 6290
+    },
+    "posttraining/2026-10-20-video-model/scripts/rft_quality.py": {
+      "sha256": "bc10bad7bf0bcc363638bc760154a17566867cb6fc702610c754aee1db773dc8",
+      "bytes": 5747
+    },
+    "posttraining/2026-10-20-video-model/scripts/sandbox.py": {
+      "sha256": "e2883311cf0c589fa3fd223e98a639cd14b5f189208d7a5ae50da3c2f2f82596",
+      "bytes": 2466
+    },
+    "posttraining/2026-10-20-video-model/scripts/stop_instance.py": {
+      "sha256": "4a048980998a8c13a5c9c22330836d76561e46fb4d46d5431f08828c18d4e14b",
+      "bytes": 1569
+    },
+    "posttraining/2026-10-20-video-model/scripts/summarize.py": {
+      "sha256": "91ad40e4d5cebc60c2c5aacc3ad59cdc11005a5f7af0fe5e8196a9a78b04d832",
+      "bytes": 7458
+    },
+    "posttraining/2026-10-20-video-model/scripts/telemetry.py": {
+      "sha256": "f2fb5e116c7c1bcf24885fb40380b7618626301f72afd81bd5015e1bef54ee7c",
+      "bytes": 1206
+    },
+    "posttraining/2026-10-20-video-model/scripts/telemetry.sh": {
+      "sha256": "11f740442edbfe0ba33531d33502d553fdf95e790be83987d6db0ade128466c5",
+      "bytes": 94
+    },
+    "posttraining/2026-10-20-video-model/scripts/train.py": {
+      "sha256": "365cd374c63b0f6167feef3921e7825e3c423c3c8b349808e6e31a6c19de6487",
+      "bytes": 15420
+    },
+    "posttraining/2026-10-20-video-model/source-provenance.json": {
+      "sha256": "b72503045c47ab6756e519e611601d7fcce51965d62c621f0e8bf34132856fda",
+      "bytes": 6681
+    },
+    "posttraining/2026-10-20-video-model/verify_results.py": {
+      "sha256": "a83f456e4642c629a400c13f4bbc7160c56d62be598a0be60eed001fb727b546",
+      "bytes": 4946
+    },
+    "posttraining/README.md": {
+      "sha256": "ddc018e36c74a497c7e39729a557862439ded07c4428c5211c24ba0afba1600c",
+      "bytes": 486
+    },
+    "results/2026-10-20-math-code/README.md": {
+      "sha256": "83b5f913f6fd417c773cc6e9b616f6e6fae56f82beda8d8383b69062ae9e71b3",
+      "bytes": 4622
+    },
+    "results/2026-10-20-math-code/evidence/base-final.json": {
+      "sha256": "8bd5b596cb835723a96fb4e8cf2dc3489f8cc98073fefa0405fcfbeca3e5ac92",
+      "bytes": 1203
+    },
+    "results/2026-10-20-math-code/evidence/best-final.json": {
+      "sha256": "2e993d4cb0c7fe5b059ac7b6f5107bd6557fe3d3813c5e0bfed110a4cd35a019",
+      "bytes": 1280
+    },
+    "results/2026-10-20-math-code/evidence/data-manifest.json": {
+      "sha256": "aa9c720c998509ee11236fa36a2aaa894bfbb0537f0ef40fcc3f25d1ac8aeed4",
+      "bytes": 939
+    },
+    "results/2026-10-20-math-code/evidence/development-and-rft.json": {
+      "sha256": "aad26437bdbac8f296d6066c4b0c61ac6b62393102f0750e8bac36ad8654c254",
+      "bytes": 3597
+    },
+    "results/2026-10-20-math-code/evidence/final-model-sha256.json": {
+      "sha256": "a07d6afce3b206a83ae88b37422466a94babdb0a871a301998092c3534eb104e",
+      "bytes": 870
+    },
+    "results/2026-10-20-math-code/evidence/original-input-hashes.json": {
+      "sha256": "7ac4bd6ff68fd4012d81d100d65614889ac1fcb99323838a7601ec76472264a4",
+      "bytes": 2045
+    },
+    "results/2026-10-20-math-code/metrics.json": {
+      "sha256": "e261a311146ab4d532fd73728bdb3a42f3034135143ed844d3ea041ddfbec85d",
+      "bytes": 4516
+    },
+    "results/2026-10-20-math-code/paired-verdicts.csv": {
+      "sha256": "8c033cb50d6da914a28d1a8e79d07392e6d1ca842f67a02b63e290cfb4352189",
+      "bytes": 245373
+    }
+  }
+}
