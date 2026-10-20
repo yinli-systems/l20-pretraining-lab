@@ -11,8 +11,8 @@
       "bytes": 75
     },
     "posttraining/2026-10-20-video-model/README.md": {
-      "sha256": "9e016a6466a01f59d8fd61990feb27cb0bf723e7b2beaa571699be2615a03cd3",
-      "bytes": 5067
+      "bytes": 5420,
+      "sha256": "773de1682cc5a2b46c1616398f8f4ef43896baa9c71a7581ab59cf5baad87098"
     },
     "posttraining/2026-10-20-video-model/environment.freeze.txt": {
       "sha256": "19d77540daa1b61bf116822cd3fb64df31a243412ca6172c59202c5ae5cc63c1",
@@ -167,8 +167,8 @@
       "bytes": 4946
     },
     "posttraining/README.md": {
-      "sha256": "ddc018e36c74a497c7e39729a557862439ded07c4428c5211c24ba0afba1600c",
-      "bytes": 486
+      "bytes": 724,
+      "sha256": "e5345c70b82bfe91c8d2e43d07036892332fdfcce8750217473d2954ccfe6943"
     },
     "results/2026-10-20-math-code/README.md": {
       "sha256": "83b5f913f6fd417c773cc6e9b616f6e6fae56f82beda8d8383b69062ae9e71b3",

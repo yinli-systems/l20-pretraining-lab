@@ -7,3 +7,7 @@ the original pretraining study used a different GPU and evaluation suite.
 
 [Final held-out results](../results/2026-10-20-math-code/README.md) include
 the unsuccessful RFT candidates and the limitations of the evaluation.
+
+[Qwen comparison and validation-preparation source](2026-10-20-followup/README.md)
+adds the two pinned Qwen comparators, the bounded preparation implementation,
+and the explicit outcome that the three-pilot GPU validation did not start.

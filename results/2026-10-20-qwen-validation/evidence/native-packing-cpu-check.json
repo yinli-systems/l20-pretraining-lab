@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "cpu_only": true,
+  "no_gpu_budget_started": true,
+  "samples": 52,
+  "blocks": 17,
+  "checks": [
+    "actual native tokenizer samples preserved whole across packed boundaries",
+    "every recorded assistant mask retained",
+    "padding0 explicitly unsupervised",
+    "declared supervised/shifted counts replay exactly",
+    "all3domains retained",
+    "provisional manifest never approved by packer"
+  ],
+  "full_production_corpus_quality_passed": false
+}

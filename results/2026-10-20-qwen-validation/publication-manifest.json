@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "scope": "Reviewed source snapshots, aggregate metrics and correctness/hash-only paired verdicts; no raw corpus/output/weights/credentials",
+  "files": {
+    "posttraining/2026-10-20-followup/.gitignore": {
+      "bytes": 77,
+      "sha256": "a35b07f9635fd235364a5c2837f7b0ab93c30039e165e6833b2d264c70841bd6"
+    },
+    "posttraining/2026-10-20-followup/README.md": {
+      "bytes": 2538,
+      "sha256": "85b2256d24c0b5fe3d2331580ac517ca9380f02c976c9cc053bed41636ed6c3b"
+    },
+    "posttraining/2026-10-20-followup/deployment/stop_instance.py": {
+      "bytes": 4393,
+      "sha256": "40273f307661c251984e241e81ddb8882bcade416d3eadf3dad10633838f555d"
+    },
+    "posttraining/2026-10-20-followup/qwen/collect_qwen_comparison.py": {
+      "bytes": 10142,
+      "sha256": "82c6c5b28105d353e2f24cc76a19e9f1dffe287e6b7d8369eee33be6a7eb68f6"
+    },
+    "posttraining/2026-10-20-followup/qwen/compare_final_evaluation.py": {
+      "bytes": 10310,
+      "sha256": "c8816968ee6f93ba94cf541f3909935fc63e10b0b9494f4b5fc4be70961f40dc"
+    },
+    "posttraining/2026-10-20-followup/qwen/qwen_comparison_controller.py": {
+      "bytes": 5870,
+      "sha256": "a36c086ba8e738b628363d39d661ad995799961e27e1548a0bebca7394852f22"
+    },
+    "posttraining/2026-10-20-followup/qwen/qwen_comparison_worker.py": {
+      "bytes": 5085,
+      "sha256": "25d46b5aa7827f672287d839b3fb97d9beb39f86e32e70f9baa329455e84920c"
+    },
+    "posttraining/2026-10-20-followup/source-provenance.json": {
+      "bytes": 12725,
+      "sha256": "892b30d83b27df89afbf52e1d959e17ed201222e648a84b3de30462e0ad5d32a"
+    },
+    "posttraining/2026-10-20-followup/validation48/build_ngram_index.py": {
+      "bytes": 2599,
+      "sha256": "b5781429bacb04279a73fb0bfbbb8d1ec953286d982eaedb5c0f94871b7057a9"
+    },
+    "posttraining/2026-10-20-followup/validation48/build_suites.py": {
+      "bytes": 13551,
+      "sha256": "43cc7e44727d196b255fc4a354a0f29e86a9570a56575859ee205d65c455415d"
+    },
+    "posttraining/2026-10-20-followup/validation48/candidates.py": {
+      "bytes": 12608,
+      "sha256": "26c98ebb6ba918b6880730c1b03d556e6a611ad4859b6d66f2dba33f0cdf7a3a"
+    },
+    "posttraining/2026-10-20-followup/validation48/certify_calculus.py": {
+      "bytes": 7262,
+      "sha256": "114976abd098dc9c66f4621614548bb2994d86c48bb6482a72753ec062c8e55a"
+    },
+    "posttraining/2026-10-20-followup/validation48/certify_computational.py": {
+      "bytes": 7710,
+      "sha256": "4482b77672d278eaf9e2eac6e863d357029b5991bb15f6e841956e8fe13315bf"
+    },
+    "posttraining/2026-10-20-followup/validation48/check_objective.py": {
+      "bytes": 3231,
+      "sha256": "ebe9fbd00d8705a71b2a76386f26dddf01a044acf9e1b7876eaf66c192ae537c"
+    },
+    "posttraining/2026-10-20-followup/validation48/cpt_candidates.py": {
+      "bytes": 11106,
+      "sha256": "2bc7f93ccd768acab4e90e89adb3480f3ea51e0e96732dddc2036dd7d0a6caa1"
+    },
+    "posttraining/2026-10-20-followup/validation48/cpt_content_checks.py": {
+      "bytes": 583,
+      "sha256": "ae08c679d7903f6530f2f41b1b70c393c93f39da54d056599e38f0792fa50e2a"
+    },
+    "posttraining/2026-10-20-followup/validation48/cpt_inputs.py": {
+      "bytes": 2616,
+      "sha256": "cd812538c12457fb555e122f6a7815b16c490312d0bf781fcecf5dd7e21b98f8"
+    },
+    "posttraining/2026-10-20-followup/validation48/cpt_prescreen.py": {
+      "bytes": 6609,
+      "sha256": "b752da79f82e87311bf86c7893e4b5c422c84497c58de92cfb037f318f614315"
+    },
+    "posttraining/2026-10-20-followup/validation48/curate_reviewed_math.py": {
+      "bytes": 6961,
+      "sha256": "7de984a46d492b964688e51994929729b6343f1efe6c9df230dca5be13994d70"
+    },
+    "posttraining/2026-10-20-followup/validation48/data_archive.py": {
+      "bytes": 6445,
+      "sha256": "a701d880726d16af496c361147d5f7394bacf4f7912fdd09af1932d1114d49fb"
+    },
+    "posttraining/2026-10-20-followup/validation48/driver.py": {
+      "bytes": 16552,
+      "sha256": "011a26b39869d508dbef30e965d1bbb35d695a952f9d54f32d1dc159cb70eda6"
+    },
+    "posttraining/2026-10-20-followup/validation48/evaluate_suite.py": {
+      "bytes": 7689,
+      "sha256": "a7b90f8e7818e15a4a04679d4daddb2eadecdf37c8e6adf4ebf73ef96aee2e50"
+    },
+    "posttraining/2026-10-20-followup/validation48/gpu_preflight.py": {
+      "bytes": 6689,
+      "sha256": "351bcc39da21ac486fce4131cc45d510f5a513933ec8f2691b1891973ceba1a6"
+    },
+    "posttraining/2026-10-20-followup/validation48/install_monitor.py": {
+      "bytes": 2735,
+      "sha256": "ecf5993c10abe8dafe293c0d4d2005280864564ea3d38e47a59bef7225161c1a"
+    },
+    "posttraining/2026-10-20-followup/validation48/make_source_reviews.py": {
+      "bytes": 3204,
+      "sha256": "262c3811167f9d0f2479406f328ca1e2906daf25bc159630a74f96d13628965f"
+    },
+    "posttraining/2026-10-20-followup/validation48/monitor.py": {
+      "bytes": 12046,
+      "sha256": "da456e73926b93141a9e330539a8da36bf340d129cb191e98b046eaa97ff2b50"
+    },
+    "posttraining/2026-10-20-followup/validation48/numeric_checks.py": {
+      "bytes": 4827,
+      "sha256": "09ccf71057fefbc740de1139dfeeec7fca2384ed46c64433dc0de61f536ea390"
+    },
+    "posttraining/2026-10-20-followup/validation48/objective.py": {
+      "bytes": 3969,
+      "sha256": "d11dab15debb57c3bd7f9ff8ca6c25fc50778ce9e76bac1cdfb5258099f92468"
+    },
+    "posttraining/2026-10-20-followup/validation48/openr1_short.py": {
+      "bytes": 7660,
+      "sha256": "79f35e22710f76ec36731cbcd4c4a147cc4435b445fd1e89811b8444240ec36d"
+    },
+    "posttraining/2026-10-20-followup/validation48/pack_data.py": {
+      "bytes": 14292,
+      "sha256": "05f4dbe267035ba99c4d0615eced1e7c49f951db1ca48a73c1a477d5942cd9dc"
+    },
+    "posttraining/2026-10-20-followup/validation48/prepare.py": {
+      "bytes": 10718,
+      "sha256": "cc6bddef13c1596e5dbf8953f0aeb98d858707d26c8cd6d37f4e478cceb6e014"
+    },
+    "posttraining/2026-10-20-followup/validation48/prior_code_families.py": {
+      "bytes": 3281,
+      "sha256": "78b8902fe64be4645d23c3d7a90dd41f67aa4262662a883d92cd9390f1c6a86a"
+    },
+    "posttraining/2026-10-20-followup/validation48/refine_math_source.py": {
+      "bytes": 4431,
+      "sha256": "a3e1e5158af5d61c80ff4047ee590cf4045bb345f3b32fb79de9e9827385d317"
+    },
+    "posttraining/2026-10-20-followup/validation48/repair_math.py": {
+      "bytes": 3539,
+      "sha256": "dc2425d4b411d066d863b595096c2c3bff9a274ffafda77f150a01c3c1ac2965"
+    },
+    "posttraining/2026-10-20-followup/validation48/replacement_math.py": {
+      "bytes": 6954,
+      "sha256": "07dd4f33d57cd0f53326950fa390abee8c503e57c8f0b2fbbca4b323eec4e745"
+    },
+    "posttraining/2026-10-20-followup/validation48/screening.py": {
+      "bytes": 4887,
+      "sha256": "fb7beb67f57f3f534cb2e5710af3bce18ca9e74600fb042d4e12fdfb81dbb076"
+    },
+    "posttraining/2026-10-20-followup/validation48/train_stage.py": {
+      "bytes": 12023,
+      "sha256": "18bd51acd6962ec819852f212974f6951f42bc92e4c41704c193471056b087ba"
+    },
+    "posttraining/2026-10-20-followup/verify_results.py": {
+      "bytes": 5640,
+      "sha256": "a316f819d92738445f725e344b3ca7da0138eddcc5687853ccbb08bf304fc827"
+    },
+    "results/2026-10-20-qwen-validation/README.md": {
+      "bytes": 4663,
+      "sha256": "34b2343d07dbc4df511f21f6dc94d4698b620433dd4922046e20099cf1a76092"
+    },
+    "results/2026-10-20-qwen-validation/evidence/native-packing-cpu-check.json": {
+      "bytes": 479,
+      "sha256": "58fbd3140aba728269d1b6c1cd7ca6615c52cada3767aa490e1919f64ea547e6"
+    },
+    "results/2026-10-20-qwen-validation/evidence/objective-cpu-parity.json": {
+      "bytes": 505,
+      "sha256": "8152e668fdb04383d26e6485320aaf80f5e1d7b304abcc77e604b691eefedf4d"
+    },
+    "results/2026-10-20-qwen-validation/metrics.json": {
+      "bytes": 8089,
+      "sha256": "85b21d6eef9aca0bd52d49d45873fa5c8bfe00f4a710a9caf634375994678325"
+    },
+    "results/2026-10-20-qwen-validation/paired-verdicts.csv": {
+      "bytes": 369003,
+      "sha256": "d0c5397ed0749d96f2fb0569efc1b9cb70e4800ddeb8907a926b5cd2b845a1c8"
+    },
+    "results/2026-10-20-qwen-validation/preparation-outcome.json": {
+      "bytes": 4227,
+      "sha256": "0cabc51296a3a7ca96231dc6e2fd37ab04255cdd9d10443bf8347c1137a7fee0"
+    },
+    "posttraining/README.md": {
+      "bytes": 724,
+      "sha256": "e5345c70b82bfe91c8d2e43d07036892332fdfcce8750217473d2954ccfe6943"
+    }
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "status": "verified_complete",
+  "verified_utc": "2026-10-20T14:11:24.526890+00:00",
+  "finished_utc": "2026-10-20T14:11:00.469396+00:00",
+  "metrics": {
+    "base": {
+      "gsm8k": {
+        "correct": 10,
+        "n": 1223,
+        "accuracy": 0.008176614881439084,
+        "wilson_95_ci": [
+          0.004447383914079003,
+          0.014985818843522465
+        ]
+      },
+      "math500": {
+        "correct": 6,
+        "n": 436,
+        "accuracy": 0.013761467889908258,
+        "wilson_95_ci": [
+          0.006321858865235655,
+          0.02969443405805619
+        ]
+      },
+      "humaneval": {
+        "correct": 0,
+        "n": 132,
+        "accuracy": 0.0,
+        "wilson_95_ci": [
+          0,
+          0.02827898679860847
+        ]
+      }
+    },
+    "posttrained": {
+      "gsm8k": {
+        "correct": 250,
+        "n": 1223,
+        "accuracy": 0.2044153720359771,
+        "wilson_95_ci": [
+          0.18275596691944038,
+          0.22792583324161184
+        ]
+      },
+      "math500": {
+        "correct": 76,
+        "n": 436,
+        "accuracy": 0.1743119266055046,
+        "wilson_95_ci": [
+          0.14158796219779002,
+          0.21272483777913187
+        ]
+      },
+      "humaneval": {
+        "correct": 11,
+        "n": 132,
+        "accuracy": 0.08333333333333333,
+        "wilson_95_ci": [
+          0.04716796636561071,
+          0.14306452263322966
+        ]
+      }
+    },
+    "qwen-0.5b": {
+      "gsm8k": {
+        "correct": 608,
+        "n": 1223,
+        "accuracy": 0.4971381847914963,
+        "wilson_95_ci": [
+          0.46916913816590056,
+          0.5251251531219657
+        ]
+      },
+      "math500": {
+        "correct": 135,
+        "n": 436,
+        "accuracy": 0.30963302752293576,
+        "wilson_95_ci": [
+          0.2680557168270206,
+          0.3545355676665323
+        ]
+      },
+      "humaneval": {
+        "correct": 48,
+        "n": 132,
+        "accuracy": 0.36363636363636365,
+        "wilson_95_ci": [
+          0.28650636653694844,
+          0.44847881168085396
+        ]
+      }
+    },
+    "qwen-1.5b": {
+      "gsm8k": {
+        "correct": 899,
+        "n": 1223,
+        "accuracy": 0.7350776778413737,
+        "wilson_95_ci": [
+          0.709637303860375,
+          0.7590459117791754
+        ]
+      },
+      "math500": {
+        "correct": 230,
+        "n": 436,
+        "accuracy": 0.5275229357798165,
+        "wilson_95_ci": [
+          0.4806255575608762,
+          0.5739395579340316
+        ]
+      },
+      "humaneval": {
+        "correct": 75,
+        "n": 132,
+        "accuracy": 0.5681818181818182,
+        "wilson_95_ci": [
+          0.48293502754942846,
+          0.6495723833416704
+        ]
+      }
+    }
+  },
+  "qwen_minus_posttrained": {
+    "qwen-0.5b": {
+      "gsm8k": {
+        "qwen_minus_posttrained_pp": 29.272281275551922,
+        "qwen_gained_items": 401,
+        "qwen_lost_items": 43,
+        "paired_bootstrap_95_ci_pp": [
+          26.328699918233852,
+          32.21586263286999
+        ]
+      },
+      "math500": {
+        "qwen_minus_posttrained_pp": 13.53211009174312,
+        "qwen_gained_items": 83,
+        "qwen_lost_items": 24,
+        "paired_bootstrap_95_ci_pp": [
+          9.174311926605505,
+          18.119266055045873
+        ]
+      },
+      "humaneval": {
+        "qwen_minus_posttrained_pp": 28.03030303030303,
+        "qwen_gained_items": 41,
+        "qwen_lost_items": 4,
+        "paired_bootstrap_95_ci_pp": [
+          19.696969696969695,
+          37.121212121212125
+        ]
+      }
+    },
+    "qwen-1.5b": {
+      "gsm8k": {
+        "qwen_minus_posttrained_pp": 53.06623058053966,
+        "qwen_gained_items": 666,
+        "qwen_lost_items": 17,
+        "paired_bootstrap_95_ci_pp": [
+          50.122649223221586,
+          56.00981193785773
+        ]
+      },
+      "math500": {
+        "qwen_minus_posttrained_pp": 35.321100917431195,
+        "qwen_gained_items": 165,
+        "qwen_lost_items": 11,
+        "paired_bootstrap_95_ci_pp": [
+          30.275229357798164,
+          40.137614678899084
+        ]
+      },
+      "humaneval": {
+        "qwen_minus_posttrained_pp": 48.484848484848484,
+        "qwen_gained_items": 66,
+        "qwen_lost_items": 2,
+        "paired_bootstrap_95_ci_pp": [
+          39.39393939393939,
+          57.57575757575758
+        ]
+      }
+    }
+  },
+  "verification": {
+    "1791_unique_rows_each": true,
+    "benchmark_content_identical": true,
+    "correct_counts_reaggregated": true,
+    "frozen_generator_and_grader_source_hashes_match": true,
+    "all_comparison_snapshot_files_verified": true,
+    "new_inference": false,
+    "new_grading": false
+  },
+  "limitations": [
+    "Native tokenizer/chat templates and EOS IDs differ; same user instructions and semantic stop tokens.",
+    "Qwen native templates may supply a default system message; rendered prompts are not identical.",
+    "2048-token total cap and 1100-token prompt cap apply per model tokenizer, so text truncation/generation budgets can differ.",
+    "One greedy generation per held-out question; question sampling intervals do not cover training-seed variation.",
+    "No subsequent tuning or selection of the L20 checkpoint from comparator results."
+  ],
+  "comparison_manifest_sha256": "91d2923d4cd3b680ee07243c35807aaf3c54c343389c4bd584ce491da4f6b651",
+  "models": [
+    {
+      "key": "qwen-0.5b",
+      "repo": "Qwen/Qwen2.5-0.5B-Instruct",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775"
+    },
+    {
+      "key": "qwen-1.5b",
+      "repo": "Qwen/Qwen2.5-1.5B-Instruct",
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+    }
+  ],
+  "protocol": {
+    "base_prompting": false,
+    "split": "final",
+    "seed": 20261019,
+    "max_new_tokens": 1800,
+    "effective_max_new_tokens": "min(1800, 2048 - padded_prompt_length)",
+    "context": 2048,
+    "prompt_token_cap": 1100,
+    "prompt_truncation": "left",
+    "generation": "greedy",
+    "eos_token_ids": [
+      32001,
+      0
+    ],
+    "code_execution": "empty chroot, unprivileged UID, seccomp syscall allowlist, 3s CPU / 6s wall / 768MiB address space",
+    "math_grader": "math-verify",
+    "cache_strategy": "dynamic",
+    "evaluation_protocol": "v2-hashlib-entrypoint",
+    "code_extraction": "first complete code fence defining the requested entrypoint; supplied prompt context retained; no test-guided selection",
+    "sandbox_revision": "v2: hashlib and md5 preloaded before chroot; original syscall and resource limits retained"
+  },
+  "interface_adaptation": "Same user instructions and frozen generator/grader; native tokenizer/chat template and semantic native EOS IDs. Qwen template may add its default system message. No sampling, quantization, training, or test-guided prompt changes.",
+  "benchmark_sha256": "1e25ce1f5d476fa59005dcd099d6d2f57deedb01e786d1fd09216fbdf8f61354",
+  "frozen_sources": {
+    "evaluate.py": "86966fbef5c655f0cc409a394e999ac7e942e2961008b7079e3ebb3f5e9f547b",
+    "common.py": "7dbadd61ed18ec8fc7dfa10603d193f7bc445cbd428d9ada82abdb9d2713727a",
+    "sandbox.py": "e2883311cf0c589fa3fd223e98a639cd14b5f189208d7a5ae50da3c2f2f82596"
+  },
+  "original_input_sha256": {
+    "final-eval-inputs/evaluations/base-final.json": "26800449d83af601489c2eb521fed99d538aa22c70209dd07bf57562747c4d97",
+    "final-eval-inputs/evaluations/base-final.samples.jsonl": "e9a19891f78e0a0d3d60cf0eaa8aa97ed947d0bff779c5e0237870d07e753ceb",
+    "final-eval-inputs/evaluations/best-final.json": "ef3a8aa71abc14f735070824af871be30fe0804f1d80823df5623b5c9f592049",
+    "final-eval-inputs/evaluations/best-final.samples.jsonl": "d48ea26287afc8b646b0fe87476c43db4a30e5e082bd1d385e21b8553d8134e1",
+    "qwen-eval-inputs/qwen-0.5b.json": "e6c610236ff49fd22f9b1bdee524303b440ae545f356906a7f0ad6e278910729",
+    "qwen-eval-inputs/qwen-0.5b.samples.jsonl": "a66c99d29ecea803f561e7ee7bc35d81dd5b17d0fa7846c68ae74620b8caa37c",
+    "qwen-eval-inputs/qwen-1.5b.json": "62069fbf13416b4684bec5a49cf08962a221c3d5093de392555fb1596b7f3ec9",
+    "qwen-eval-inputs/qwen-1.5b.samples.jsonl": "48450439f1da0e7e3f2d88abda1c7d04af3298cd0c492a97d0ca6a87df0153cd"
+  }
+}

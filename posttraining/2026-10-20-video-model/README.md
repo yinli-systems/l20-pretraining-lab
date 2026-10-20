@@ -7,13 +7,17 @@ This is the source snapshot for a bounded follow-on experiment on
 are separate from the earlier pretraining and multimodal experiments.
 
 One NVIDIA RTX PRO 6000 Blackwell Server Edition (97,887 MiB reported memory)
-was allocated for at most 24 hours, starting October 19, 2026 at 19:48:39 UTC.
+was used with a 24-hour experiment deadline, starting October 19, 2026 at
+19:48:39 UTC. Backup and shutdown verification continued after that deadline;
+this is not a claim of exactly 24 hours of total instance allocation or billing.
 Training and selection ended October 20 at 11:58:03 UTC after two RFT rounds
 failed to improve the selected development score. Final evaluation finished
 at 13:02:28 UTC, about 17.23 elapsed hours after budget start. Elapsed time
 includes preparation and evaluation; it is not a measurement of active GPU
 training time or energy use. Backup and shutdown completion are not asserted
-by this source release.
+by this original result snapshot. The [follow-up package](../../results/2026-10-20-qwen-validation/README.md)
+records the later Qwen comparison, unlaunched validation pilots and separately
+verified backup/shutdown outcome.
 
 ## Training
 
