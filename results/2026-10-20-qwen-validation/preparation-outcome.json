@@ -1,0 +1,117 @@
+{
+  "status": "preparation_closed_before_training",
+  "preparation_end_utc": "2026-10-20T19:48:39+00:00",
+  "new_48h_budget_started": false,
+  "GPU_preflight_executed": false,
+  "GPU_training_executed": false,
+  "three_pilot_results_exist": false,
+  "new_Chat_training": "deferred by user; not started; no new Chat weights",
+  "math_review": {
+    "math_original_candidates": 245,
+    "all_original_rows_semantically_reviewed": true,
+    "after_errata_and_conservative_template_dedup": 186,
+    "after_old_training_prompt_family_and_13word_screen": 98,
+    "eligible_supervised_tokens_old_screen_only": 62010,
+    "eligible_native_tokens_old_screen_only": 67232,
+    "quality_approved": false,
+    "fresh_frozen_test_screen_remaining": true
+  },
+  "general_source_gate": {
+    "status": "failed_unchanged_raw_pool_quarantined",
+    "reviewed": 35,
+    "fixed_sample_n": 200,
+    "confirmed_arithmetic_algebra_gate_rows": [
+      0,
+      4,
+      13,
+      24,
+      30
+    ],
+    "conservative_error_fraction_lower_bound": 0.025,
+    "not_population_estimate": true,
+    "packer_rejects_source": true
+  },
+  "source_audit_scope": "Failure counts concern fixed local candidate subsets and reviewed portions of fixed samples, not upstream population error-rate estimates. No rejected candidate subset entered new training.",
+  "code_candidates": {
+    "counts": {
+      "scanned": 1448168,
+      "accepted_candidates": 90832,
+      "nonpadding_tokens": 45267166,
+      "supervised_tokens": 24660371,
+      "duplicates": 50721,
+      "validation_rejected": 1004737,
+      "length_rejected": 200026,
+      "old_prompt_or_numeric_family_rejected": 145372
+    },
+    "quality_approved": false,
+    "role": "quarantined CPU-execution-checked candidates; no new model score"
+  },
+  "fresh_code_suite": {
+    "dev": 172,
+    "confirmation": 334,
+    "required_dev": 400,
+    "required_confirmation": 800
+  },
+  "CPT": {
+    "expected_packed_tokens": 800000000,
+    "production_native_objectives_created": false,
+    "quality_approved": false,
+    "old_overlap_classification_reexecuted_by_combined_audit": false,
+    "domains": {
+      "math": {
+        "raw_tokens": 400002946,
+        "old_eligible_tokens": 347127825,
+        "raw_text_hash_upper_bound_tokens": 347127825
+      },
+      "code": {
+        "raw_tokens": 500001441,
+        "old_eligible_tokens": 353222056,
+        "raw_text_hash_upper_bound_tokens": 353208046
+      },
+      "general": {
+        "raw_tokens": 170000804,
+        "old_eligible_tokens": 169743611,
+        "raw_text_hash_upper_bound_tokens": 169742275
+      }
+    },
+    "upper_bound_scope": "Before new-suite decontamination, remaining content/AST/near-duplicate filtering, source review and actual native packing."
+  },
+  "storage": {
+    "full_training_backup_capacity_approved": false,
+    "historical_backup_preserved": true
+  },
+  "closeout": {
+    "terminal_files": 22,
+    "terminal_bytes": 2179645857,
+    "terminal_all_files_independently_rehashed": true,
+    "raw_archive_files": 18,
+    "raw_archive_original_bytes_verified": true,
+    "stop_request_accepted_utc": "2026-10-20T19:58:59.652634+00:00",
+    "provider_console_observed_utc": "2026-10-20T20:00:16.415089+00:00",
+    "provider_visible_state": "Inactive",
+    "provider_verification": "Existing authenticated console after backup and accepted stop request; not a post-stop API actual_status query",
+    "storage_charges_can_continue": true
+  },
+  "uncompleted": [
+    "Independent fresh suite freeze/gold review",
+    "Adequate quality-approved SFT data",
+    "Production native packed corpus and replay",
+    "Full training/backup capacity gate",
+    "GPU model/fused loss-gradient-throughput preflight",
+    "All three pilot runs and repeat seed"
+  ],
+  "private_receipt_identities": {
+    "data-readiness-update.json": {
+      "bytes": 2524,
+      "sha256": "8bb2f0994d52ae8593b6ac557e866a0fd0465011b192635bc8b43c1f34de18f8"
+    },
+    "cpt-old-screen-combined-audit.json": {
+      "bytes": 5956,
+      "sha256": "e906a2919973e449d110d83fb786c8f03badb684f2b382f12fb004475d9676fe"
+    },
+    "closeout.json": {
+      "bytes": 2651,
+      "sha256": "92d1bb8c60e168de0321119bd81b2720ba22fca53d9fa158fe603c0987858f2c"
+    }
+  }
+}

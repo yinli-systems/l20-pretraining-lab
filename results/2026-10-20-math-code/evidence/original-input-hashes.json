@@ -1,0 +1,63 @@
+{
+  "remote_snapshot_utc": "2026-10-20T13:03:08.654049+00:00",
+  "files": {
+    "final-report.json": {
+      "sha256": "cf87c3e811714d2862dc8b667af2e09adcbb5d7e4c1d77265dc5404c2b5eed1a",
+      "bytes": 4080
+    },
+    "best-model.json": {
+      "sha256": "c2ee64b664dee604b784e263c0b7638cd5d00fe0293a92009ff9249c4e474e18",
+      "bytes": 243
+    },
+    "final-model-sha256.json": {
+      "sha256": "a07d6afce3b206a83ae88b37422466a94babdb0a871a301998092c3534eb104e",
+      "bytes": 870
+    },
+    "pipeline-status.json": {
+      "sha256": "487bae1172b13c851b9f229d101c04dde2e9eeec654780b40b500b92788305b3",
+      "bytes": 135
+    },
+    "evaluate.py": {
+      "sha256": "86966fbef5c655f0cc409a394e999ac7e942e2961008b7079e3ebb3f5e9f547b",
+      "bytes": 8149
+    },
+    "sandbox.py": {
+      "sha256": "e2883311cf0c589fa3fd223e98a639cd14b5f189208d7a5ae50da3c2f2f82596",
+      "bytes": 2466
+    },
+    "common.py": {
+      "sha256": "7dbadd61ed18ec8fc7dfa10603d193f7bc445cbd428d9ada82abdb9d2713727a",
+      "bytes": 3879
+    },
+    "pipeline.py": {
+      "sha256": "fef8e28f7e4b2c0b3cb0db81b078713c9232d3a3229529a45c3f46a6969f791f",
+      "bytes": 8967
+    },
+    "evaluations/base-final.json": {
+      "sha256": "26800449d83af601489c2eb521fed99d538aa22c70209dd07bf57562747c4d97",
+      "bytes": 1202
+    },
+    "evaluations/best-final.json": {
+      "sha256": "ef3a8aa71abc14f735070824af871be30fe0804f1d80823df5623b5c9f592049",
+      "bytes": 1250
+    },
+    "evaluations/base-final.samples.jsonl": {
+      "sha256": "e9a19891f78e0a0d3d60cf0eaa8aa97ed947d0bff779c5e0237870d07e753ceb",
+      "bytes": 11350660
+    },
+    "evaluations/best-final.samples.jsonl": {
+      "sha256": "d48ea26287afc8b646b0fe87476c43db4a30e5e082bd1d385e21b8553d8134e1",
+      "bytes": 3396022
+    }
+  },
+  "available_in_repository": [
+    "derived paired verdicts and summary metadata"
+  ],
+  "not_published": [
+    "raw prompts",
+    "generated completions",
+    "benchmark answers and executable tests",
+    "model and optimizer states",
+    "machine-local logs"
+  ]
+}

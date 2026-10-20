@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "cpu_only": true,
+  "native_transformers": true,
+  "tests": {
+    "cpt": {
+      "native_loss": 4.180160999298096,
+      "shifted_supervised_tokens": 57,
+      "loss_and_gradient_parity": true
+    },
+    "sft": {
+      "native_loss": 4.149087905883789,
+      "shifted_supervised_tokens": 36,
+      "loss_and_gradient_parity": true
+    }
+  },
+  "deterministic_cursor": true,
+  "budgets_floor_without_epoch_overrun": true,
+  "gpu_fused_kernel_parity": "pending before real training"
+}

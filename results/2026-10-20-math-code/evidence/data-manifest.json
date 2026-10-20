@@ -1,0 +1,28 @@
+{
+  "sequence_length": 2048,
+  "seed": 20261019,
+  "splits": {
+    "train": {
+      "examples": 797876,
+      "blocks": 192412,
+      "tokens": 387229477,
+      "supervised_tokens": 280546530,
+      "packing_efficiency": 0.9826668454483414
+    },
+    "valid": {
+      "examples": 2370,
+      "blocks": 580,
+      "tokens": 1160581,
+      "supervised_tokens": 847816,
+      "packing_efficiency": 0.9770516231142241
+    }
+  },
+  "global_token_prompt_duplicates_removed": 1794,
+  "r1_code_syntax_rejected": 0,
+  "packing": "complete ChatML conversations with standard causal concatenation and assistant-only loss; no answer truncation; prompt-grouped holdout",
+  "advanced_sources": [
+    "r1-math",
+    "r1-code"
+  ],
+  "verification": "R1 math uses completion and math-verify flags; R1 code uses complete released traces and Python syntax checks, not independent execution verification; execution verification is used for online code RFT"
+}
