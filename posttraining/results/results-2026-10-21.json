@@ -1,0 +1,81 @@
+{
+ "date": "2026-10-21",
+ "status": "interim: DPO and full final-model evaluation still running",
+ "notes": {
+  "gsm8k/exact_match": "lm-eval 5-shot, chat template + multi-turn few-shot for chat models, flexible extract",
+  "math500_0shot_chat / gsm8k_0shot_chat": "math_eval.py: zero-shot, greedy, \\boxed{} answer graded with math-verify",
+  "minerva_math/exact_match": "unreliable for chat models (answer-format mismatch); see README"
+ },
+ "models": {
+  "L20-1B-20B-Base (before post-training)": {
+   "gsm8k/exact_match": 0.022,
+   "minerva_math/exact_match": 0.0058,
+   "minerva_math/math_verify": 0.0264,
+   "humaneval/pass@1": 0.0061,
+   "mmlu/acc": 0.2547,
+   "arc_challenge/acc_norm": 0.3387,
+   "arc_easy/acc_norm": 0.641,
+   "hellaswag/acc_norm": 0.4517,
+   "piqa/acc_norm": 0.6948,
+   "winogrande/acc": 0.5217,
+   "openbookqa/acc_norm": 0.342,
+   "truthfulqa_mc2/acc": 0.369
+  },
+  "TinyLlama/TinyLlama-1.1B-Chat-v1.0": {
+   "gsm8k/exact_match": 0.0265,
+   "minerva_math/exact_match": 0.0164,
+   "minerva_math/math_verify": 0.0356,
+   "ifeval/prompt_level_loose_acc": 0.1682,
+   "ifeval/inst_level_loose_acc": 0.2662,
+   "humaneval_instruct/pass@1": 0.0854,
+   "mmlu/acc": 0.2498,
+   "arc_challenge/acc_norm": 0.3285,
+   "arc_easy/acc_norm": 0.5484,
+   "hellaswag/acc_norm": 0.6045,
+   "piqa/acc_norm": 0.7443,
+   "winogrande/acc": 0.6046,
+   "openbookqa/acc_norm": 0.356,
+   "truthfulqa_mc2/acc": 0.3743,
+   "math500_0shot_chat": 0.022,
+   "gsm8k_0shot_chat": 0.0212
+  },
+  "Qwen/Qwen2.5-0.5B-Instruct": {
+   "gsm8k/exact_match": 0.4049,
+   "minerva_math/exact_match": 0.0156,
+   "minerva_math/math_verify": 0.2726,
+   "ifeval/prompt_level_loose_acc": 0.2921,
+   "ifeval/inst_level_loose_acc": 0.3837,
+   "humaneval_instruct/pass@1": 0.3232,
+   "mmlu/acc": 0.4691,
+   "arc_challenge/acc_norm": 0.3362,
+   "arc_easy/acc_norm": 0.5905,
+   "hellaswag/acc_norm": 0.5237,
+   "piqa/acc_norm": 0.7018,
+   "winogrande/acc": 0.5604,
+   "openbookqa/acc_norm": 0.348,
+   "truthfulqa_mc2/acc": 0.4182,
+   "math500_0shot_chat": 0.332,
+   "gsm8k_0shot_chat": 0.4943
+  },
+  "SFT step 500": {
+   "gsm8k/exact_match": 0.025,
+   "minerva_math/exact_match": 0.0032,
+   "minerva_math/math_verify": 0.0274,
+   "math500_0shot_chat": 0.022,
+   "gsm8k_0shot_chat": 0.025
+  },
+  "SFT step 1000": {
+   "math500_0shot_chat": 0.026,
+   "gsm8k_0shot_chat": 0.0303,
+   "gsm8k/exact_match": 0.0387
+  },
+  "SFT step 2000": {
+   "math500_0shot_chat": 0.046,
+   "gsm8k_0shot_chat": 0.0516
+  },
+  "SFT final (step 4478)": {
+   "math500_0shot_chat": 0.05,
+   "gsm8k_0shot_chat": 0.0796
+  }
+ }
+}

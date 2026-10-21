@@ -12,6 +12,7 @@ records to make the new presentation look cleaner.
 | [docs/](.) | Architecture, limitations and reproducibility |
 | [tools/](../tools/) | CPU-only verification tools |
 | [tests/](../tests/) | New layout/result regression checks |
+| [posttraining/](../posttraining/README.md) | SFT + DPO post-training of the released base (interim, 2026-10-21) |
 
 ## Lossless historical relocation
 
