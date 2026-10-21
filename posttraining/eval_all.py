@@ -27,8 +27,9 @@ def main():
     lm = VLLM(pretrained=model, dtype="bfloat16", gpu_memory_utilization=0.8, max_model_len=2048,
               enable_prefix_caching=True, batch_size="auto", seed=0)
     chat = mode == "chat"
+    part = os.environ.get("PART", "all")  # all | math | gen | mmlu | cs  (split across GPUs)
     summary = {}
-    if chat:
+    if chat and part in ("all", "math"):
         summary.update(run_math(lm.model))
         print(json.dumps(summary), flush=True)
     runs = [
@@ -42,6 +43,10 @@ def main():
         runs += [dict(tasks=["humaneval"], confirm_run_unsafe_code=True)]
     runs += [dict(tasks=["mmlu"], num_fewshot=5, loglik=True),
              dict(tasks=["arc_challenge", "arc_easy", "hellaswag", "piqa", "winogrande", "openbookqa", "truthfulqa_mc2"], loglik=True)]
+    groups = {"math": ["gsm8k"], "gen": ["ifeval", "humaneval_instruct", "humaneval"], "mmlu": ["mmlu"],
+              "cs": ["arc_challenge", "minerva_math"]}
+    if part != "all":
+        runs = [r for r in runs if r["tasks"][0] in groups[part] and r["tasks"][0] != "minerva_math"]
     for r in runs:
         loglik = r.pop("loglik", False)
         use_chat = chat and not loglik
@@ -50,7 +55,7 @@ def main():
         for t, v in res["results"].items():
             summary[t] = {k: v[k] for k in v if isinstance(v[k], float) and "stderr" not in k}
         print(lm_eval.utils.make_table(res), flush=True)
-        json.dump(summary, open(f"{out}/summary.json", "w"), indent=1)
+        json.dump(summary, open(f"{out}/summary_{part}.json", "w"), indent=1)
     print("EVAL_DONE", out, flush=True)
 
 if __name__ == "__main__":

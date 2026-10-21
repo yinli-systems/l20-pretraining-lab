@@ -1,10 +1,13 @@
 {
  "date": "2026-10-21",
- "status": "interim: DPO and full final-model evaluation still running",
+ "status": "final for SFT; DPO was stopped at 28% (step 268/956) and is not reported",
  "notes": {
   "gsm8k/exact_match": "lm-eval 5-shot, chat template + multi-turn few-shot for chat models, flexible extract",
   "math500_0shot_chat / gsm8k_0shot_chat": "math_eval.py: zero-shot, greedy, \\boxed{} answer graded with math-verify",
-  "minerva_math/exact_match": "unreliable for chat models (answer-format mismatch); see README"
+  "minerva_math/exact_match": "unreliable for chat models (answer-format mismatch); see README",
+  "humaneval_chat_pass@1": "code_eval.py: chat prompt, no assistant prefill, greedy, first ```python block run against the official tests",
+  "humaneval_instruct/pass@1": "lm-eval humaneval_instruct prefills the function signature; our SFT model answers with full code blocks and scores 0 under that prefill, so it is not used for comparison",
+  "mmlu/acc (SFT final)": "5-shot, 57 subjects run in 8 parallel lm-eval jobs, sample-weighted mean"
  },
  "models": {
   "L20-1B-20B-Base (before post-training)": {
@@ -37,7 +40,8 @@
    "openbookqa/acc_norm": 0.356,
    "truthfulqa_mc2/acc": 0.3743,
    "math500_0shot_chat": 0.022,
-   "gsm8k_0shot_chat": 0.0212
+   "gsm8k_0shot_chat": 0.0212,
+   "humaneval_chat_pass@1": 0.0488
   },
   "Qwen/Qwen2.5-0.5B-Instruct": {
    "gsm8k/exact_match": 0.4049,
@@ -55,7 +59,8 @@
    "openbookqa/acc_norm": 0.348,
    "truthfulqa_mc2/acc": 0.4182,
    "math500_0shot_chat": 0.332,
-   "gsm8k_0shot_chat": 0.4943
+   "gsm8k_0shot_chat": 0.4943,
+   "humaneval_chat_pass@1": 0.3293
   },
   "SFT step 500": {
    "gsm8k/exact_match": 0.025,
@@ -74,8 +79,21 @@
    "gsm8k_0shot_chat": 0.0516
   },
   "SFT final (step 4478)": {
-   "math500_0shot_chat": 0.05,
-   "gsm8k_0shot_chat": 0.0796
+   "math500_0shot_chat": 0.048,
+   "gsm8k_0shot_chat": 0.0804,
+   "gsm8k/exact_match": 0.1039,
+   "humaneval_chat_pass@1": 0.1585,
+   "humaneval_instruct/pass@1": 0.0,
+   "ifeval/prompt_level_loose_acc": 0.3512,
+   "ifeval/inst_level_loose_acc": 0.4688,
+   "mmlu/acc": 0.2638,
+   "arc_challenge/acc_norm": 0.3055,
+   "arc_easy/acc_norm": 0.553,
+   "hellaswag/acc_norm": 0.4398,
+   "piqa/acc_norm": 0.6817,
+   "winogrande/acc": 0.532,
+   "openbookqa/acc_norm": 0.354,
+   "truthfulqa_mc2/acc": 0.3672
   }
  }
 }
